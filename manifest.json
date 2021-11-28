@@ -1,0 +1,17 @@
+{
+  "name": "PowerBI Folders",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "Microsoft did not put folders in PowerBI, so I did!",
+  "homepage_url": "https://christopherpfister.de",
+  "content_scripts": [
+    {
+      "matches": ["https://*.powerbi.com/groups/*/list"],
+      "all_frames": true,
+      "js": ["powerbifolders.js"]
+    }
+  ],
+  "permissions": [
+    "activeTab"
+  ]
+}
